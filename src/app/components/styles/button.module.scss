@@ -1,0 +1,44 @@
+.button {
+  text-decoration: none;
+  background: #ffffff05;
+  padding: 15px;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #ffffff10;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(106, 17, 203, 1) 0%,
+    rgba(37, 117, 252, 1) 100%
+  );
+}
+
+.gradient:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(137, 46, 234) 0%,
+    rgb(67, 136, 255) 100%
+  );
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

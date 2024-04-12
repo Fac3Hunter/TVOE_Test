@@ -1,0 +1,55 @@
+.header {
+  background-color: #09090c;
+  height: 96px;
+  color: #fff;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    * {
+      margin: 0 10px;
+    }
+  }
+}
+
+.menu {
+  height: 68px;
+  width: 379px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu:hover {
+  cursor: pointer;
+  background: #ffffff05;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.register {
+  text-decoration: none;
+  color: #bababa;
+}
+
+.register:hover {
+  color: #d7d7d7;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  svg {
+    margin-right: 10px; /* Вы можете изменить значение отступа на ваше усмотрение */
+  }
+}
