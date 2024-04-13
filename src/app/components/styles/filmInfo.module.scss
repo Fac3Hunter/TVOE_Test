@@ -1,0 +1,42 @@
+.film {
+  width: 100%;
+  height: 594px;
+  background-image: url(../../assets/avatar.png);
+  background-position: right;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  div {
+    width: 100%;
+    height: 40%;
+    margin: 0 32px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+
+    div {
+      * {
+        margin: 0 10px;
+      }
+    }
+
+    .button-container {
+      align-self: flex-start; /* Добавляем это свойство для каждого внутреннего элемента */
+      * {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.name {
+  width: 338px;
+  height: 101px;
+  background-image: url(../../assets/avatar_name.png);
+  background-repeat: no-repeat;
+}

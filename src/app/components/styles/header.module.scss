@@ -1,5 +1,9 @@
+@import url("https://fonts.cdnfonts.com/css/tt-norms-pro");
+
 .header {
   background-color: #09090c;
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 550;
   height: 96px;
   color: #fff;
   display: flex;
@@ -33,6 +37,9 @@
 }
 
 .register {
+  font-family: "TT Norms Pro", sans-serif;
+  font-weight: 550;
+  font-size: 24px;
   text-decoration: none;
   color: #bababa;
 }
