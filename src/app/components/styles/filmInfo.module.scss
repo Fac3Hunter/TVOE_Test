@@ -1,5 +1,4 @@
 .film {
-  width: 100%;
   height: 594px;
   background-image: url(../../assets/avatar.png);
   background-position: right;
@@ -8,20 +7,24 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0 32px;
 
-  div {
+  > div {
     width: 100%;
     height: 40%;
-    margin: 0 32px;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-end;
+    align-content: space-between;
 
-    div {
+    > div {
+      width: 100%;
+      display: flex;
       * {
         margin: 0 10px;
+        display: flex;
+        align-content: center;
       }
     }
 

@@ -7,7 +7,9 @@ const FilmInfo = () => {
         <div className={styles.name}></div>
         <div>
           <Button text="7,9" gradient={true} />
-          <h4>• 2024 • Фентези • США • 16+</h4>
+          <h4>
+            <div>• 2024 • Фентези • США • 16+ </div>
+          </h4>
         </div>
         <div className={styles["button-container"]}>
           <Button text={`ㅤㅤㅤПодробнееㅤㅤㅤ`} gradient={true} />
