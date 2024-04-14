@@ -1,0 +1,47 @@
+@import url("https://fonts.cdnfonts.com/css/tt-norms-pro");
+
+.image {
+  height: 324px;
+  width: 216px;
+  border-radius: 24px;
+  margin-bottom: 12px;
+
+  display: flex;
+}
+
+.card {
+  position: relative;
+  font-size: 18px;
+  font-family: "TT Norms Pro", sans-serif;
+}
+
+.name {
+  margin-bottom: 4px;
+}
+
+.rating-wrapper {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+
+  padding: 16px 16px 0;
+}
+
+.optional {
+  position: absolute;
+
+  left: 48px;
+  padding: 16px 16px 0;
+}
+
+.new-season,
+.premiere {
+  padding: 5px 8px;
+  background-color: #09090c60;
+  border: 1px solid #ffffff30;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "TT Norms Pro", sans-serif;
+}

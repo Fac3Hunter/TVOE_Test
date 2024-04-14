@@ -1,0 +1,42 @@
+.container {
+  margin-top: 55px;
+  margin-left: 32px;
+}
+
+.headers {
+  font-size: 24px;
+  color: #ffffff30;
+  display: flex;
+  > * {
+    margin-right: 24px;
+  }
+}
+.chosen {
+  color: #ffffff;
+}
+.info {
+  font-size: 16px;
+  font-weight: 200;
+
+  margin: 16px 0;
+}
+.attention {
+  display: flex;
+  color: #4b4b4b;
+  font-size: 16px;
+  align-items: center;
+
+  > svg {
+    margin-right: 24px;
+  }
+
+  > div {
+    width: 90%;
+  }
+}
+
+.svgIcon {
+  width: 45px;
+  height: 44px;
+  margin-right: 0px;
+}

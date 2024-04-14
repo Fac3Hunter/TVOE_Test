@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Rating from "./Rating";
 import styles from "./styles/filmInfo.module.scss";
 const FilmInfo = () => {
   return (
@@ -6,7 +7,7 @@ const FilmInfo = () => {
       <div>
         <div className={styles.name}></div>
         <div>
-          <Button text="7,9" gradient={true} />
+          <Rating value="7,9" />
           <h4>
             <div>• 2024 • Фентези • США • 16+ </div>
           </h4>

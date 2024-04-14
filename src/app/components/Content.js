@@ -1,10 +1,11 @@
 import News from "./News";
 import Promos from "./Promos";
 import Weeklys from "./Weeklys";
+import styles from "./styles/content.module.scss";
 
 const Content = () => {
   return (
-    <div>
+    <div className={styles.block}>
       <News />
       <Promos />
       <Weeklys />

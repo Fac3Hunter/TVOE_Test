@@ -1,0 +1,32 @@
+@import url("https://fonts.cdnfonts.com/css/tt-norms-pro");
+
+.title {
+  display: flex;
+
+  color: #ffffff30;
+  font-size: 24px;
+  font-family: "TT Norms Pro", sans-serif;
+  > * {
+    margin-right: 20px;
+    padding: 8px 10px;
+  }
+
+  > .chosen {
+    color: white;
+  }
+}
+
+.content {
+  padding-top: 20px;
+  display: flex;
+  overflow-x: hidden;
+
+  > * {
+    margin-right: 20px;
+  }
+}
+
+.container {
+  margin-left: 32px;
+  margin-top: 64px;
+}

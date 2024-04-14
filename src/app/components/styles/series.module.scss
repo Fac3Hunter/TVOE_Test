@@ -1,0 +1,38 @@
+.container {
+  width: 325px;
+  height: 252px;
+  border-radius: 20px;
+}
+.image {
+  width: 325px;
+  height: 198px;
+  border-radius: 20px;
+}
+.container:hover {
+  cursor: pointer;
+}
+.image-wrapper {
+  width: 325px;
+  height: 198px;
+  position: relative;
+}
+.info {
+  margin-top: 8px;
+}
+.name {
+  margin-bottom: 6px;
+}
+.viewed {
+  color: #bababa;
+}
+
+.time {
+  background-color: #09090c60;
+  border: #ffffff30 solid 1px;
+  color: #ffffff;
+  padding: 6px 8px 5px;
+  border-radius: 8px;
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+}

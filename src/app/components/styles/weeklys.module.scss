@@ -1,0 +1,21 @@
+.image {
+  margin-left: 87px;
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.block {
+  display: flex;
+  overflow-x: hidden;
+  > * {
+    margin-right: 20px;
+  }
+}
+
+.point {
+  position: relative;
+}
+.number {
+  position: absolute;
+  top: 30%;
+}

@@ -1,0 +1,40 @@
+.container {
+  width: 400px;
+  padding: 28px 32px 20px;
+  border-radius: 18px;
+  background-color: #ffffff05;
+
+  > div {
+    margin-bottom: 12px;
+  }
+  position: relative;
+}
+
+.comment {
+  width: 400px;
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  > div {
+    width: 100%;
+  }
+  gap: 4px;
+}
+
+.date {
+  color: #ffffff30;
+}
+
+.read {
+  color: #ffffff30;
+  cursor: pointer;
+}
+
+.rating {
+  position: absolute;
+  width: 40px;
+  right: 32px;
+  top: 28px;
+}
