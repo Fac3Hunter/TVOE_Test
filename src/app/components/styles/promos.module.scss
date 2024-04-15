@@ -1,17 +1,99 @@
+@font-face {
+  font-family: "DrukWideCyr-Bold";
+  src: url("/fonts/drukwidecyr-bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("/fonts/drukwidecyr-bold.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("/fonts/drukwidecyr-bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/drukwidecyr-bold.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("/fonts/drukwidecyr-bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/drukwidecyr-bold.svg#drukwidecyr-bold") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
 .promo {
+  position: relative;
   height: 320px;
-  background-color: #09090c;
+  background-color: #ffffff01;
   border-radius: 24px;
   box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
   margin-top: 104px;
-  display: flex;
+  box-sizing: border-box;
+  padding: 40px;
   flex-wrap: wrap;
+  margin-right: 32px;
+  overflow: hidden;
 
   > h1 {
     width: 100%;
-    margin-top: 40px;
-    margin-left: 40px;
     font-size: 28px;
     font-weight: bold;
+    //font-family: "DrukWideCyr-Bold"; Шрифт не работает, не ясно почему
   }
+}
+.floatingText {
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  transform: rotate(-13.77deg);
+  border-radius: 32.4px;
+  padding: 10px 16px;
+  box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
+}
+.floatingText2 {
+  position: absolute;
+  top: 120px;
+  right: 180px;
+  transform: rotate(26.7deg);
+  border-radius: 32.4px;
+  padding: 10px 16px;
+  box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
+}
+.floatingText3 {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  transform: rotate(-22.14deg);
+  border-radius: 32.4px;
+  padding: 10px 16px;
+  box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
+}
+.lights {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.popcorn {
+  position: absolute;
+  right: -70px;
+  top: 0;
+}
+
+.button {
+  width: 212px;
+  margin-top: 32px;
+  height: 48px;
+}
+
+.point {
+  display: flex;
+  gap: 8px;
+}
+
+.points {
+  margin-top: 34px;
+  display: flex;
+  gap: 28px;
+}
+
+.svgWrapper {
+  width: 24px;
+  height: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

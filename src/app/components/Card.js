@@ -15,7 +15,9 @@ const Card = ({ imageUrl, name, rating, newSeason, premiere }) => {
         </div>
         <img className={styles.image} src={imageUrl} alt="Image" />
       </div>
-      <div className={styles.name}>{name}</div>
+      <div className={styles.name}>
+        {name.length > 20 ? name.slice(0, 21) + "..." : name}
+      </div>
       <div className={styles.stats}>2022, 2 часа 37 мин</div>
     </div>
   );
