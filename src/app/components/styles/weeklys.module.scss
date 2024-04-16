@@ -1,12 +1,19 @@
 .block {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
   > * {
     margin-right: 20px;
   }
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.block::-webkit-scrollbar {
+  display: none;
 }
 
 .point {
+  cursor: pointer;
   position: relative;
   display: flex;
 }

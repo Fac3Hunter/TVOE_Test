@@ -6,9 +6,13 @@ import styles from "./styles/review.module.scss";
 
 const Review = ({ comment }) => {
   const [slice, setSlice] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${isExpanded ? styles.expanded : ""}`}>
       <div className={styles.rating}>
         <Rating value={9}></Rating>
       </div>
@@ -22,6 +26,7 @@ const Review = ({ comment }) => {
       <div
         onClick={() => {
           setSlice(!slice);
+          toggleExpand();
         }}
         className={styles.read}
       >

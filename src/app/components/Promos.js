@@ -86,7 +86,7 @@ const Promos = () => {
         </div>
       </div>
       <div className={styles.button}>
-        <Button text="Смотреть 7 дней за 0₽" gradient />
+        <Button text="Смотреть 7 дней за 0₽" style={"gradient"} />
       </div>
 
       <div className={styles.floatingText}>СУБТИТРЫ</div>

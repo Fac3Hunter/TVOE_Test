@@ -26,8 +26,8 @@ const Header = () => {
       </div>
 
       <div>
-        <Button text="7 дней за 0 ₽" gradient={true} />
-        <Button text="Промокод" gradient={false} />
+        <Button text="7 дней за 0 ₽" style={"gradient"} />
+        <Button text="Промокод" />
         <a href="/" className={styles.register}>
           Войти
         </a>

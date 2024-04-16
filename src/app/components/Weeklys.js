@@ -2,7 +2,7 @@ import styles from "./styles/weeklys.module.scss";
 
 const Weeklys = () => {
   return (
-    <div className={styles.smth}>
+    <div>
       <h1>ТОП НЕДЕЛИ</h1>
       <div className={styles.block}>
         <div className={styles.point}>

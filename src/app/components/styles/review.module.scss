@@ -8,6 +8,11 @@
     margin-bottom: 12px;
   }
   position: relative;
+  max-height: 174px;
+}
+
+.container.expanded {
+  max-height: none;
 }
 
 .comment {

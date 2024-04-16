@@ -19,11 +19,14 @@
 .content {
   padding-top: 20px;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
 
   > * {
     margin-right: 20px;
   }
+}
+.content::-webkit-scrollbar {
+  display: none;
 }
 
 .container {

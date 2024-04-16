@@ -36,3 +36,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+.grey {
+  background-color: #ffffff20;
+}
+.grey:hover {
+  background-color: #ffffff30;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

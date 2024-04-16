@@ -27,9 +27,13 @@
 .reviews {
   margin-top: 32px;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
   > * {
     flex-grow: 0;
     width: 400;
   }
+}
+
+.reviews::-webkit-scrollbar {
+  display: none;
 }

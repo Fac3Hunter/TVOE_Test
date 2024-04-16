@@ -4,5 +4,11 @@ body {
   background-color: #09090c; /* Set background color of the entire website to black */
   color: #ffffff;
 
-  font-family: "TT Norms Pro", sans-serif;
+  * {
+    font-family: "TT Norms Pro", sans-serif;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

@@ -8,9 +8,9 @@ const Footer = () => {
     <div className={styles.footer}>
       <div>
         <Button text="Написать в поддержку" gradient={false} />
-        <div>
-          <div>
-            Youtube
+        <div className={styles.socialNetworks}>
+          <div className={styles.socials}>
+            <div>Youtube</div>
             <svg
               width="21"
               height="15"
@@ -25,8 +25,8 @@ const Footer = () => {
               />
             </svg>
           </div>
-          <div>
-            Вконтакте
+          <div className={styles.socials}>
+            <div>Вконтакте</div>
             <svg
               width="21"
               height="12"
@@ -41,8 +41,8 @@ const Footer = () => {
               />
             </svg>
           </div>
-          <div>
-            Telegram
+          <div className={styles.socials}>
+            <div>Telegram</div>
             <svg
               width="17"
               height="14"
@@ -76,7 +76,8 @@ const Footer = () => {
       </div>
       <div className={styles.center}>
         <div className={styles["tab-bar-tablet"]}>
-          <div>
+          <div className={styles.active}>
+            <img src="/assets/Active.png"></img>
             <svg
               width="19"
               height="21"

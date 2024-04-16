@@ -4,16 +4,54 @@ import styles from "./styles/filmInfo.module.scss";
 const FilmInfo = () => {
   return (
     <div className={styles.film}>
-      <div>
-        <div className={styles.name}></div>
-        <div>
-          <Rating value="7,9" />
-          <h4>
-            <div>• 2024 • Фентези • США • 16+ </div>
-          </h4>
+      <div className={styles.content}>
+        <div className={styles.name} />
+        <div className={styles.tags}>
+          <Rating value="7,9" fontSize="20px" />
+          <svg
+            width="4"
+            height="4"
+            viewBox="0 0 4 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="2" cy="2" r="2" fill="white" fill-opacity="0.3" />
+          </svg>
+
+          <div>2024</div>
+          <svg
+            width="4"
+            height="4"
+            viewBox="0 0 4 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="2" cy="2" r="2" fill="white" fill-opacity="0.3" />
+          </svg>
+          <div>Фентези</div>
+          <svg
+            width="4"
+            height="4"
+            viewBox="0 0 4 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="2" cy="2" r="2" fill="white" fill-opacity="0.3" />
+          </svg>
+          <div>США</div>
+          <svg
+            width="4"
+            height="4"
+            viewBox="0 0 4 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="2" cy="2" r="2" fill="white" fill-opacity="0.3" />
+          </svg>
+          <div>16+</div>
         </div>
         <div className={styles["button-container"]}>
-          <Button text={`ㅤㅤㅤПодробнееㅤㅤㅤ`} gradient={true} />
+          <Button text={`ㅤㅤㅤㅤПодробнееㅤㅤㅤㅤ`} style={"gradient"} />
           <Button
             text={
               <svg
@@ -29,7 +67,7 @@ const FilmInfo = () => {
                 />
               </svg>
             }
-            gradient={false}
+            style={"grey"}
           />
           <Button
             text={
@@ -46,7 +84,7 @@ const FilmInfo = () => {
                 />
               </svg>
             }
-            gradient={false}
+            style={"grey"}
           />
           <Button
             text={
@@ -63,7 +101,7 @@ const FilmInfo = () => {
                 />
               </svg>
             }
-            gradient={false}
+            style={"grey"}
           />
         </div>
       </div>
