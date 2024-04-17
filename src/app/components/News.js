@@ -4,7 +4,7 @@ import styles from "./styles/news.module.scss";
 const News = () => {
   return (
     <div className={styles.block}>
-      <h1>Новинки</h1>
+      <h1 className={styles.news}>Новинки</h1>
       <div className={styles.cardsContainer}>
         <Card name="На грани" rating="8,9" imageUrl="../assets/na_grani.png" />
         <Card

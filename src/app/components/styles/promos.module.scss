@@ -17,15 +17,16 @@
   background-color: #ffffff01;
   border-radius: 24px;
   box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
-  margin-top: 104px;
+  margin-top: 32px;
+  margin-right: 32px;
   box-sizing: border-box;
   padding: 40px;
   flex-wrap: wrap;
-  margin-right: 32px;
   overflow: hidden;
+  flex-direction: column;
+  gap: 20px;
 
   > h1 {
-    width: 100%;
     font-size: 28px;
     font-weight: bold;
     //font-family: "DrukWideCyr-Bold"; Шрифт не работает, не ясно почему
@@ -38,6 +39,7 @@
   transform: rotate(-13.77deg);
   border-radius: 32.4px;
   padding: 10px 16px;
+  font-size: 12px;
   box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
 }
 .floatingText2 {
@@ -47,6 +49,8 @@
   transform: rotate(26.7deg);
   border-radius: 32.4px;
   padding: 10px 16px;
+  font-size: 12px;
+
   box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
 }
 .floatingText3 {
@@ -55,6 +59,7 @@
   right: 200px;
   transform: rotate(-22.14deg);
   border-radius: 32.4px;
+  font-size: 12px;
   padding: 10px 16px;
   box-shadow: inset 0px 0px 18px 0px rgba(255, 255, 255, 0.3);
 }
@@ -82,7 +87,6 @@
 }
 
 .points {
-  margin-top: 34px;
   display: flex;
   gap: 28px;
 }
@@ -96,4 +100,73 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .promo {
+    margin-right: 16px;
+    padding: 0 16px;
+    height: 549px;
+  }
+  .popcorn {
+    height: 300px;
+    right: -40px;
+    top: 60%;
+    transform: rotate(-8deg);
+  }
+  .lights {
+    right: -100px;
+    top: 40%;
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 10%, black 60%);
+  }
+  .floatingText {
+    top: 65%;
+  }
+  .floatingText2 {
+    top: 77%;
+    display: block;
+    left: 70px;
+  }
+  .floatingText3 {
+    top: 90%;
+  }
+
+  .mobile-block {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .points {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    > div {
+      margin-top: 12px;
+      gap: 12px;
+    }
+    .column {
+      margin-top: 0;
+    }
+  }
+
+  .offer-text,
+  .button {
+    margin: 0;
+  }
+
+  .offer-text {
+    line-height: 30px;
+  }
+
+  .button {
+    width: 212px;
+  }
+  .buttonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }

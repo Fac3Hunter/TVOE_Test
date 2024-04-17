@@ -5,12 +5,15 @@
 .cardsContainer {
   display: flex;
   overflow-x: scroll;
-
-  > * {
-    margin-right: 20px;
-  }
+  gap: 20px;
 }
 
 .cardsContainer::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .news {
+    font-size: 22px;
+  }
 }

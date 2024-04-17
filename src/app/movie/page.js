@@ -9,7 +9,7 @@ const movie = () => {
   return (
     <div>
       <Header />
-      <FilmInfo />
+      <FilmInfo description={true} />
       <Season />
       <div>
         <Info />

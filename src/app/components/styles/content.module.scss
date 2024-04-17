@@ -1,3 +1,8 @@
 .block {
   padding-left: 32px;
 }
+@media screen and (max-width: 800px) {
+  .block {
+    padding-left: 16px;
+  }
+}

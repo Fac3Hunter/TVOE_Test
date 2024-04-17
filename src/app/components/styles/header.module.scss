@@ -14,13 +14,14 @@
   div {
     display: flex;
     align-items: center;
-
-    * {
-      margin: 0 10px;
-    }
+    gap: 16px;
   }
 }
 
+.search {
+  padding: 0 16px;
+  border-radius: 25px;
+}
 .menu {
   height: 68px;
   width: 379px;
@@ -55,7 +56,57 @@
   align-items: center;
   text-decoration: none;
   color: white;
-  svg {
-    margin-right: 10px; /* Вы можете изменить значение отступа на ваше усмотрение */
+  > svg {
+    margin-right: 10px;
+  }
+}
+
+.mobile-only {
+  > div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: flex;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 92px;
+    height: 33px;
+    > h1 {
+      font-size: 20px !important;
+    }
+  }
+
+  .mobile-block {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: #ffffff05;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .header {
+    height: 72px;
+    color: #fff;
+    display: flex;
+    padding: 16px 12px;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
   }
 }
