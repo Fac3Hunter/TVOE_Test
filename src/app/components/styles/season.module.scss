@@ -2,6 +2,7 @@
 
 .title {
   display: flex;
+  overflow-x: scroll;
 
   color: #ffffff30;
   font-size: 24px;
@@ -25,11 +26,21 @@
     margin-right: 20px;
   }
 }
-.content::-webkit-scrollbar {
+.content::-webkit-scrollbar,
+.title::-webkit-scrollbar {
   display: none;
 }
 
 .container {
   margin-left: 32px;
   margin-top: 64px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-left: 16px;
+  }
+  .title {
+    white-space: nowrap;
+  }
 }

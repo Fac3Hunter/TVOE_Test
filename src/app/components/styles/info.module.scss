@@ -5,12 +5,19 @@
 
 .headers {
   font-size: 24px;
+  overflow-x: scroll;
   color: #ffffff30;
   display: flex;
   > * {
+    display: inline-block;
+    white-space: nowrap;
     margin-right: 24px;
   }
 }
+.headers::-webkit-scrollbar {
+  display: none;
+}
+
 .chosen {
   color: #ffffff;
 }
@@ -39,4 +46,28 @@
   width: 45px;
   height: 44px;
   margin-right: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-top: 55px;
+    margin-left: 16px;
+  }
+
+  .attention {
+    padding: 16px;
+    background-color: #ffffff05;
+    border-radius: 16px;
+    align-items: flex-start;
+
+    > svg {
+      margin-right: 16px;
+      width: 20px;
+      height: 20px;
+    }
+
+    > div {
+      width: 90%;
+    }
+  }
 }

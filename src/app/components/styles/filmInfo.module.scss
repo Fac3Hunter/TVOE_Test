@@ -70,7 +70,32 @@
   .mobile-only {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 32px;
+      justify-content: space-around;
+      > a {
+        width: 85%;
+      }
+      > div {
+        display: flex;
+        gap: 8px;
+        > a {
+          width: 80px;
+        }
+      }
+    }
   }
   .film {
     height: 300px;
@@ -88,5 +113,21 @@
   }
   .tags {
     font-size: 16px;
+  }
+  .description {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .svg {
+    width: 24px;
+    height: 24px;
+  }
+  .film {
+    position: relative;
+  }
+  .back {
+    position: absolute;
+    left: 16px;
+    top: 16px;
   }
 }
