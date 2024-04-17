@@ -58,6 +58,10 @@
   font-size: 20px;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .mobile-hide {
     display: none !important;
